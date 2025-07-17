@@ -9,7 +9,7 @@ class ManualControl (Node):
     def __init__(self):
         super().__init__("manual_control")
 
-        self.publisher_ = self.create_publisher(JointState, "/pid_controller/reference", 12)
+        self.publisher_ = self.create_publisher(JointState, "/isaac_joint_command", 12)
 
         self.joint_state = JointState()
 

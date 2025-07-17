@@ -40,7 +40,7 @@ def generate_launch_description():
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
         executable="spawner",
-        arguments=["pid_controller", "--controller-manager", "/controller_manager"],
+        arguments=["so100_arm_controller", "--controller-manager", "/controller_manager"],
     )
 
     pid_controller_spawner = Node(
