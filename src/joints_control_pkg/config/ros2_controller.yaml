@@ -21,9 +21,9 @@ so100_arm_controller:
     command_interface: position
     reference_and_state_interfaces: ["position"]
     gains:
-      Elbow: {p: 1.0, i: 2.0, d: 3.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-      Jaw: {p: 1.0, i: 2.0, d: 3.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-      Pitch: {p: 1.0, i: 2.0, d: 3.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-      Rotation: {p: 1.0, i: 2.0, d: 3.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-      Wrist_Pitch: {p: 1.0, i: 2.0, d: 3.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
-      Wrist_Roll: {p: 1.0, i: 2.0, d: 3.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      Elbow: {p: 1.0, i: 0, d: 0.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      Jaw: {p: 1.0, i: 0, d: 0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      Pitch: {p: 1.0, i: 0, d: 0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      Rotation: {p: 5.0, i: 0, d: 2.0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      Wrist_Pitch: {p: 1.0, i: 0, d: 0, i_clamp_max: 5.0, i_clamp_min: -5.0}
+      Wrist_Roll: {p: 1.0, i: 0, d: 0, i_clamp_max: 5.0, i_clamp_min: -5.0}
